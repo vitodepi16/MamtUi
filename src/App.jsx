@@ -16,7 +16,7 @@ function App() {
           <div
   className="hero min-h-screen"
   style={{
-    backgroundImage: "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+    backgroundImage: "url(https://w0.peakpx.com/wallpaper/403/85/HD-wallpaper-machop-machamp.jpg)",
   }}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-neutral-content text-center">
@@ -25,7 +25,7 @@ function App() {
       <p className="mb-5">
        Benvenut* nella tua collezione Pokemon! Qui potrai trovare tutte le carte dei tuoi Pokemon preferiti, scoprire nuove carte e tanto altro!
       </p>
-      <button className="btn btn-primary">Scopri le carte</button>
+      <button className="btn bg-ciola">Scopri le carte</button>
     </div>
   </div>
 </div>
