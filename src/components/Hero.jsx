@@ -12,7 +12,7 @@ function Hero() {
                             Benvenut* nella tua collezione Pokemon! Qui potrai trovare tutte le carte dei tuoi Pokemon preferiti, scoprire nuove carte e tanto altro!
                         </p>
                     <button className="btn bg-ciola text-white"
-                            onClick={() => navigate('/CardPage')}
+                            onClick={() => navigate('/cardpage')}
                     >Scopri le carte</button>
                     </div>
                 </div>
