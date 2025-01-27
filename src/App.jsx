@@ -20,12 +20,12 @@ function App() {
   }}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-neutral-content text-center">
-    <div className="max-w-md">
+    <div className="max-w-md text-white">
       <h1 className="mb-5 text-5xl font-bold">Benvenuto/a</h1>
       <p className="mb-5">
        Benvenut* nella tua collezione Pokemon! Qui potrai trovare tutte le carte dei tuoi Pokemon preferiti, scoprire nuove carte e tanto altro!
       </p>
-      <button className="btn bg-ciola">Scopri le carte</button>
+      <button className="btn bg-ciola text-white">Scopri le carte</button>
     </div>
   </div>
 </div>

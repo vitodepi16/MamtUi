@@ -6,11 +6,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#415262',
+        primary: '#a4b4b4',
         secondary: '#838b94',
-        third: '#a4b4b4',
+        third: '#415262',
         ciola: '#6A319C'
-      },},
+      },
+      fontFamily: {
+        custom: ['PokemonFont', 'sans-serif'], // Nome usato nella regola @font-face
+      },
+    },
   },
   plugins: [daisyui],
 };
