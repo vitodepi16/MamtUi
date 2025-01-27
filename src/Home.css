@@ -1,8 +1,8 @@
 @font-face {
   font-family: "PokemonFont"; /* Nome del font */
   src: url("./assets/fonts/Pokemon-Solid.ttf") format("truetype"); /* Percorso relativo al file */
-  font-weight: normal; /* Puoi specificare vari pesi */
-  font-style: normal; /* Puoi anche aggiungere 'italic', se necessario */
+  font-weight: normal;
+  font-style: normal;
 }
 main {
   margin-top: 50px;
