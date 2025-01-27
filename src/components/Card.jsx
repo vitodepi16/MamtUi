@@ -1,7 +1,7 @@
 function Card(){
     return (
     
-        <div className="card card-side bg-slate-500 shadow-xl w-96">
+        <div className="card card-side bg-base-200 shadow-xl w-96">
   <figure className="w-full">
     <img
       src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"

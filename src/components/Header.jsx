@@ -1,7 +1,7 @@
 function header(){
     return (
         <header className="fixed top-0 w-full z-50">
-<div className="navbar bg-base-100 bg-gray-600 ">
+<div className="navbar bg-base-200 ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -28,7 +28,7 @@ function header(){
     </div>
   </div>
   <div className="navbar-center">
-    <a className="btn btn-ghost text-xl text-white">MamtUI</a>
+    <a className=" text-xl text-black">MamtUI</a>
   </div>
   <div className="navbar-end">
     <button className="btn btn-ghost btn-circle">
