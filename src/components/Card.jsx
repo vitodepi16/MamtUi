@@ -14,7 +14,7 @@ import { useNavigate } from 'react-router-dom';function Card() {
             <p>Click the button to watch on Jetflix app.</p>
             <div className="card-actions justify-end">
             <button className="btn btn-primary"
-            onClick={() => navigate('/home')}>Watch</button>
+            onClick={() => navigate('/')}>Watch</button>
             </div>
           </div>
         </div>

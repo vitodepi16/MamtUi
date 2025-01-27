@@ -9,7 +9,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
         <Routes>
-          <Route path="/home" element={<Home />} /> {/* Pagina delle card */}
+        <Route path="/" element={<Home />} /> {/* Pagina delle card */}
           <Route path="/cardpage" element={<CardPage />} /> {/* Pagina delle card */}
         </Routes>
     </Router>
