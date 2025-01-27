@@ -8,7 +8,7 @@ function CardPage() {
             <header>
                 <Header></Header>
             </header>
-            <div>
+            <div className='h-screen'>
                 <Card></Card>
             </div>
             <Footer></Footer>

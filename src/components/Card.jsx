@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';function Card() {
     const navigate = useNavigate();
     return (
     
-        <div className="card card-side bg-base-200 shadow-xl w-96">
+        <div className="card card-side bg-base-200 shadow-xl w-96 mt-20">
           <figure className="w-full">
             <img
               src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
