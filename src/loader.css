@@ -6,6 +6,7 @@
   border-radius: 50%;
   border: 8px solid black;
   animation: spin 1s linear infinite;
+  margin: 25vh 0;
 }
 
 .pokemon::before {
