@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-function header() {
+function Header() {
   const navigate = useNavigate();
     return (
         <header className="fixed top-0 w-full z-50">
@@ -70,4 +70,4 @@ function header() {
         </header>
     )
 };
-export default header;
+export default Header;
