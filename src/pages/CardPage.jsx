@@ -7,10 +7,9 @@ import { useEffect, useState } from 'react';
 function CardPage() {
     const [cards, setCards] = useState([]);
     useEffect(() => {
-        API.get('https://api.tcgdex.net/v2/en/sets/sv08.5',).then((response) => {
-            console.log(response.data);
-            console.log(response.data.cards);
-            setCards(response.data.cards);
+        API.get('https://api.pokemontcg.io/v2/cards',).then((response) => {
+            console.log(response.data.data);
+            setCards(response.data.data);
         });
 }, []);
 

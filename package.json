@@ -13,6 +13,7 @@
     "@material-tailwind/react": "^2.1.10",
     "@tcgdex/sdk": "^2.6.0",
     "axios": "^1.7.9",
+    "pokemontcgsdk": "^2.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.3"

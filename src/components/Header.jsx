@@ -1,4 +1,7 @@
-function header(){
+import { useNavigate } from "react-router-dom";
+
+function header() {
+  const navigate = useNavigate();
     return (
         <header className="fixed top-0 w-full z-50">
           <div className="navbar bg-primary">
@@ -21,7 +24,7 @@ function header(){
                 <ul
                   tabIndex={0}
                   className="menu menu-sm dropdown-content bg-primary text-third rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Homepage</a></li>
+                  <li><a onClick={() => navigate("/")} >Homepage</a></li>
                   <li><a>Portfolio</a></li>
                   <li><a>About</a></li>
                 </ul>
