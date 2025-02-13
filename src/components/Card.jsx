@@ -37,4 +37,6 @@ function Card({ card }) {
   );
 }
 export default Card;
-{/* onClick={() => navigate(card.cardmarket.url)} */}
+{
+  /* onClick={() => navigate(card.cardmarket.url)} */
+}
