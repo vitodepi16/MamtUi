@@ -10,12 +10,12 @@ function App() {
       <header>
         <Header></Header>
       </header>
-      <main>
-        <div className="flex flex-auto flex-wrap">
+      <main className="flex flex-col">
+        <div className="flex flex-auto flex-wrap w-full">
           <Hero></Hero>
         </div>
-        <div>
-          <Slider />
+        <div className="py-20">
+          <Slider/>
         </div>
       </main>
       <Footer></Footer>
