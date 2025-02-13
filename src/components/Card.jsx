@@ -7,7 +7,8 @@ function Card({ card }) {
         <img src={card.images.large} alt="Movie" />
       </figure>
       <div className="card-body">
-        <p>{card.name}</p>
+        <p className="text-2xl font-semibold">{card.name}</p>
+        <p> HP {card.hp}</p>
         {Array.isArray(card?.attacks) ? (
           card.attacks.map((attack, index) => (
             <p key={index}>
