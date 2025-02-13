@@ -29,7 +29,9 @@ function Card({ card }) {
           ) : (
             <p>Nessun URL disponibile</p>
           )}
+          <p>{card.index}</p>
         </div>
+        
       </div>
     </div>
   );
