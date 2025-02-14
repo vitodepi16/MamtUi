@@ -21,7 +21,7 @@ function Card({ card }) {
         <div className="card-actions justify-end">
           {card?.cardmarket?.url ? (
             <button
-              className="btn btn-primary"
+              className="btn btn-primary w-full"
               onClick={() => (window.location.href = card.cardmarket.url)}
             >
               Acquista ora
