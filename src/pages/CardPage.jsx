@@ -13,7 +13,7 @@ function CardPage() {
   const [selectedRarity, setSelectedRarity] = useState("");
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 50; // Numero di carte per pagina
+  const itemsPerPage = 18; // Numero di carte per pagina
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -80,14 +80,14 @@ function CardPage() {
           )}
         </div>
         
-      </div>
-        
-        <Pagination
+      </div>  
+        {!isLoading ? <Pagination
           totalItems={filteredCards.length}
           itemsPerPage={itemsPerPage}
           currentPage={currentPage}
           onPageChange={setCurrentPage}
-        />
+        /> : null}
+        
       <Footer/>
     </>
   );
