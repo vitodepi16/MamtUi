@@ -7,6 +7,10 @@ import Loader from "../components/Loader.jsx";
 import Pagination from "../components/Pagination.jsx";
 import API from "../API.js";
 
+import pokemon from "pokemontcgsdk";
+
+pokemon.configure({ apiKey: "efd2f85e-d654-4e3a-916b-02a88a205513" });
+
 function CardPage() {
   const [cards, setCards] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -15,7 +19,7 @@ function CardPage() {
   const [selectedSet, setSelectedSet] = useState(""); // set selezionato
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 18; // carte per pagina
+  const itemsPerPage = 25; // carte per pagina
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -37,6 +41,22 @@ function CardPage() {
         setIsLoading(false);
       });
   }, []);
+
+  useEffect(() => {
+    setIsLoading(true)
+    if(selectedSet !== ''){
+
+      API.get(`https://api.pokemontcg.io/v2/cards?q=set.id:${selectedSet}`)
+      .then((response) => {
+        setCards(response.data.data);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        setError(err);
+        setIsLoading(false);
+      });
+    }
+  }, [selectedSet]);
 
   const filteredCards = cards.filter((card) => {
     return (
