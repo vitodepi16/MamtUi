@@ -34,6 +34,7 @@ function CardPage() {
       });
     API.get("https://api.pokemontcg.io/v2/sets")
       .then((response) => {
+        console.log(response.data.data);
         setSets(response.data.data);
       })
       .catch((err) => {
@@ -41,6 +42,20 @@ function CardPage() {
         setIsLoading(false);
       });
   }, []);
+  useEffect(() => {
+    setIsLoading(true);
+    API.get(`https://api.pokemontcg.io/v2/cards?set.id=${selectedSet}`)
+      .then((response) => {
+        setCards(response.data.data);
+        setIsLoading(false);
+        console.log(response);
+      })
+
+      .catch((err) => {
+        setError(err);
+        setIsLoading(false);
+      });
+  }, [selectedSet]);
 
   useEffect(() => {
     setIsLoading(true)
